@@ -1,0 +1,20 @@
+Let's start programming!
+
+This project will target the JVM, the reason for that is not "it's better" or anything along those lines.
+I have a lot of languages that I want to try, features I want to explore...
+That said I will explore them in this simple project anyway so I will choose an environment I'm more comfortable with to start the project.
+
+You can use any IDE or Text Editor you want, I will be using IntelliJ IDEA.
+Exactly because every person has a preference about the editor I don't want the project to be tied with any IDE or Text Editor.
+Because of that I will be using the Gradle Build Tool to build, test, automate all project tasks.
+
+Set Up the project:
+
+Create Project Folder (mkdir && cd)
+Init Gradle Project   (gradle init (--type java-application))
+    java-application will create the project folder structure, that's all I want from that switch
+Small Touch Ups
+    Change Project to Kotlin
+
+
+Version Control       (git init, create .gitignore)
