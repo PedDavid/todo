@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.1.2'
+    id 'org.springframework.boot' version '1.5.3.RELEASE'
 }
 
 repositories {
@@ -8,7 +9,9 @@ repositories {
 }
 
 dependencies {
-    // Use JUnit test framework
+    compile 'org.jetbrains.kotlin:kotlin-stdlib-jre8'                   //Kotlin Standard Library
+    compile 'org.springframework.boot:spring-boot-starter-hateoas'
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'    //Template Engine
+
     testCompile 'junit:junit:4.12'
-    compile 'org.jetbrains.kotlin:kotlin-stdlib-jre8'
 }
