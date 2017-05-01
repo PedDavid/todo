@@ -5,7 +5,7 @@
   "repository": "https://github.com/PedDavid/todo.git",
   "author": "PedDavid <peddavid96@outlook.com>",
   "scripts": {
-    "build": "webpack index.js dist/bundle.js"
+    "build": "webpack"
   },
   "devDependencies": {
     "webpack": "^2.4.1"
