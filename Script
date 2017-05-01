@@ -25,8 +25,8 @@ TODO: Java/Kotlin Linter
 Add Client code / Start JS project  (yarn init)
 Add Module Bundling Dependency      (yarn add --dev webpack) (add bundle/build script)
 Add Code Linter                     (yarn add --dev standard)
-Add Unit Testing                    (yarn add --dev tape)     TODO: Add to Git Hooks
-Add Support for newer JS features   (yarn add --dev babel-loader babel-core)
+Add Unit Testing                    (yarn add --dev tape)                       //TODO: Add to Git Hooks
+Add Support for newer JS features   (yarn add --dev babel-loader babel-core)    //TODO: This step was skipped because simple React didn't need it
 Add React
 Add React-Router
 Add Redux

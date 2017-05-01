@@ -9,6 +9,8 @@
     "test": "standard && tape test/**/*.js"
   },
   "devDependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "standard": "^10.0.2",
     "tape": "^4.6.3",
     "webpack": "^2.4.1"
