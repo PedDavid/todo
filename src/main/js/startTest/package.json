@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "https://github.com/PedDavid/todo.git",
   "author": "PedDavid <peddavid96@outlook.com>",
-  "devDependencies": {}
+  "scripts": {
+    "build": "webpack index.js dist/bundle.js"
+  },
+  "devDependencies": {
+    "webpack": "^2.4.1"
+  }
 }
