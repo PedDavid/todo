@@ -18,3 +18,15 @@ Small Touch Ups
 
 
 Version Control       (git init, create .gitignore, git hooks)
+
+TODO: Java/Kotlin Linter
+
+//Client Side
+Add Client code / Start JS project  (yarn init)
+Add Module Bundling Dependency      (yarn add --dev webpack)
+Add Code Linter                     (yarn add --dev standard)
+Add Unit Testing                    (yarn add --dev tape)
+Add Support for newer JS features   (yarn add --dev babel-loader babel-core)
+Add React
+Add React-Router
+Add Redux
