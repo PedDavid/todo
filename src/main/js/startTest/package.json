@@ -5,9 +5,11 @@
   "repository": "https://github.com/PedDavid/todo.git",
   "author": "PedDavid <peddavid96@outlook.com>",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "test": "standard"
   },
   "devDependencies": {
+    "standard": "^10.0.2",
     "webpack": "^2.4.1"
   }
 }
