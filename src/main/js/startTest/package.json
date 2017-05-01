@@ -1,0 +1,8 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PedDavid/todo.git",
+  "author": "PedDavid <peddavid96@outlook.com>",
+  "devDependencies": {}
+}
