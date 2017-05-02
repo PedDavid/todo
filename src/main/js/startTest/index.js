@@ -1,11 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-function HelloWorld (props) {
-  return <h1> Hello {props.name} World </h1>
-}
+import HelloWorld from './components/HelloWorld'
+
+const todos = [ 'todo1', 'todo2', 'todo3' ]
+  .map((desc, index) => ({
+    key: index,
+    description: desc
+  }))
 
 ReactDOM.render(
-  React.createElement(HelloWorld, { name: 'React' }),
+  <HelloWorld name='React' todos={todos} />,
   document.getElementById('react')
 )

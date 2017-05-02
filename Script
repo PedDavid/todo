@@ -34,3 +34,4 @@ TODO: Should I run standard && webpack or use a standard loader in webpack?
 Add Support for newer JS features
 Add React-Router
 Add Redux
+Add Hot-Reloading (webpack-dev-server)
