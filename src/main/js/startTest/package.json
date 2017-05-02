@@ -5,10 +5,13 @@
   "repository": "https://github.com/PedDavid/todo.git",
   "author": "PedDavid <peddavid96@outlook.com>",
   "scripts": {
-    "build": "webpack",
+    "build": "standard && webpack",
     "test": "standard && tape test/**/*.js"
   },
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-react": "^6.24.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "standard": "^10.0.2",

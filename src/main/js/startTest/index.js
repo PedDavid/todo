@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 function HelloWorld (props) {
-  return React.createElement('h1', null, `Hello ${props.name} World`)
+  return <h1> Hello {props.name} World </h1>
 }
 
 ReactDOM.render(

@@ -9536,15 +9536,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-function HelloWorld (props) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h1', null, `Hello ${props.name} World`)
+function HelloWorld(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'h1',
+    null,
+    ' Hello ',
+    props.name,
+    ' World '
+  );
 }
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { name: 'React' }),
-  document.getElementById('react')
-)
-
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld, { name: 'React' }), document.getElementById('react'));
 
 /***/ }),
 /* 83 */
