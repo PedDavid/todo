@@ -1,15 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
 
+import reducers from './reducers'
 import HelloWorld from './components/HelloWorld'
 
-const todos = [ 'todo1', 'todo2', 'todo3' ]
-  .map((desc, index) => ({
-    key: index,
-    description: desc
-  }))
+const store = createStore(reducers)
 
 ReactDOM.render(
-  <HelloWorld name='React' todos={todos} />,
-  document.getElementById('react')
+  <Provider store={store}>
+    <HelloWorld name='React' />
+  </Provider>,
+  document.getElementById('root')
 )

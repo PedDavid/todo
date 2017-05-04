@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
 import TodoItem from './TodoItem'
 
@@ -7,9 +8,11 @@ const Todos = ({todos}) =>
   <div>
     <h1>Todos</h1>
     <ul>
-      {todos.map(value => <TodoItem key={value.key.toString()} description={value.description} />)}
+      {todos.map(value => <TodoItem key={value.id.toString()} description={value.description} />)}
     </ul>
   </div>
+
+const BoundTodos = connect(state => ({ todos: state.todos }))(Todos)
 
 const About = () =>
   <div>
@@ -22,7 +25,7 @@ const Home = () =>
     <h1>Home</h1>
   </div>
 
-export default ({ name, todos }) =>
+export default ({ name }) =>
   <Router>
     <div>
       <h1>Hello {name} World</h1>
@@ -36,6 +39,6 @@ export default ({ name, todos }) =>
 
       <Route exact path='/' component={Home} />
       <Route path='/about' component={About} />
-      <Route path='/todos' component={() => <Todos todos={todos} />} />
+      <Route path='/todos' component={() => <BoundTodos />} />
     </div>
   </Router>
