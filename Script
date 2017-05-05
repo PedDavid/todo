@@ -37,3 +37,5 @@ Add Support for newer JS features
 Add React-Router
 Add Redux
 Add Hot-Reloading (webpack-dev-server)
+
+TODO: Multiple modules to test individual packages. Make Hot Reloading work
