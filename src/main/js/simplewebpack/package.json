@@ -1,0 +1,13 @@
+{
+  "name": "simplewebpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "PedDavid",
+  "license": "MIT",
+  "scripts":{
+	  "build": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^2.5.1"
+  }
+}
