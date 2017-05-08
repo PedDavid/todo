@@ -87,8 +87,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./node_modules/css-loader/index.js!./style.css", function() {
-			var newContent = require("!!./node_modules/css-loader/index.js!./style.css");
+		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./style.scss", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./style.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -103,13 +103,11 @@ if(false) {
 
 __webpack_require__(0)
 
-//setInterval(_ => {
-  const heading = document.createElement('h1')
-  const headingText = document.createTextNode('Hello Web Pack World 1')
-  heading.appendChild(headingText)
-  console.log('Hello')
-  document.getElementById('root').appendChild(heading)
-//}, 1000)
+const heading = document.createElement('h1')
+const headingText = document.createTextNode('Hello Web Pack World')
+heading.appendChild(headingText)
+console.log('Hello')
+document.getElementById('root').appendChild(heading)
 
 
 /***/ }),
@@ -121,7 +119,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "body {\r\n    background: pink;\r\n}", ""]);
+exports.push([module.i, "body {\n  background: pink; }\n  body h1 {\n    background: lightblue; }\n", ""]);
 
 // exports
 

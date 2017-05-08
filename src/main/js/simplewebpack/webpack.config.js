@@ -2,14 +2,14 @@ const { resolve } = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-	entry: './index.js',
+	entry: './app/index.js',
 	output: {
-		path: resolve(__dirname, 'dist'),
-		filename: 'bundle.js'
+    path: resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
 	},
 	module: {
 		rules: [
-      { test: /\.css$/, use: [ 'style-loader' ,'css-loader' ] }
+      { test: /\.scss$/, use: [ 'style-loader' ,'css-loader', 'sass-loader' ] }
     ]
 	}
 }
