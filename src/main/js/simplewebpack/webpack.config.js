@@ -7,14 +7,9 @@ module.exports = {
 		path: resolve(__dirname, 'dist'),
 		filename: 'bundle.js'
 	},
-	devtool: 'inline-source-map',
-	devServer: {
-		hot: true,
-		contentBase: resolve(__dirname, 'dist'),
-		publicPath: '/'
-	},
-	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
-		new webpack.NamedModulesPlugin()
-	]
+	module: {
+		rules: [
+      { test: /\.css$/, use: [ 'style-loader' ,'css-loader' ] }
+    ]
+	}
 }

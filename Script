@@ -23,9 +23,11 @@ TODO: Java/Kotlin Linter
 
 //Client Side
 Add Client code / Start JS project  (yarn init)
-Add Module Bundling Dependency      (yarn add --dev webpack) (add bundle/build script)
 Add Code Linter                     (yarn add --dev standard)
 Add Unit Testing                    (yarn add --dev tape)                       //TODO: Add to Git Hooks
+Add Module Bundling Dependency      (yarn add --dev webpack) (add bundle/build script)
+Add css loader to webpack
+Add sass
 Add React
 Add support to JSX
     Install Webpack loader babel-loader that requires babel-core
