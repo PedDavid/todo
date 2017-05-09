@@ -1,7 +1,9 @@
 import './style.scss'
 
-const heading = document.createElement('h1')
-const headingText = document.createTextNode('Hello webpack World')
-heading.appendChild(headingText)
-console.log('Hello')
-document.getElementById('root').appendChild(heading)
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+ReactDOM.render(
+  React.createElement('h1', null, 'Hello React World'),
+  document.getElementById('root')
+)
