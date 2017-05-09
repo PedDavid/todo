@@ -24,21 +24,19 @@ TODO: Java/Kotlin Linter
 //Client Side
 Add Client code / Start JS project  (yarn init)
 Add Code Linter                     (yarn add --dev standard)
-Add Unit Testing                    (yarn add --dev tape)                       //TODO: Add to Git Hooks
-Add Module Bundling Dependency      (yarn add --dev webpack) (add bundle/build script)
+Add Unit Testing                    (yarn add --dev tape)                       //TODO: Add to Git Hooks and WebPack
+Add Module Bundling Dependency      (yarn add --dev webpack) (add bundle/build script to project.json)
+Add Code Linter Loader              (yarn add --dev standard-loader)
+Add Hot-Reloading                   (yarn add --dev webpack-dev-server)         //TODO: config
 Add css loader to webpack
 Add sass
 Add React
 Add support to JSX
     Install Webpack loader babel-loader that requires babel-core
     Install React preset for Babel  (yarn add --dev babel-loader babel-core babel-preset-react)
-TODO: Should I run standard && webpack or use a standard loader in webpack?
 Add semantic-ui-react               (yarn add --dev semantic-ui-react)
 Add semantic-ui stylesheet          (<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"/>) //TODO: Add semantic-ui themes
                                     OR add css package and webpack file-loader(yarn add --dev semantic-ui-css file-loader) //TODO: Change configurations of file-loader
 Add Support for newer JS features
 Add React-Router
 Add Redux
-Add Hot-Reloading (webpack-dev-server)
-
-TODO: Multiple modules to test individual packages. Make Hot Reloading work
