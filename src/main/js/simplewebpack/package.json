@@ -17,6 +17,7 @@
     "node-sass": "^4.5.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "redux": "^3.6.0",
     "sass-loader": "^6.0.3",
     "semantic-ui-css": "^2.2.10",
     "semantic-ui-react": "^0.68.3",
