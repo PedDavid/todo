@@ -2,7 +2,7 @@ const { resolve } = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-	entry: './app/index.js',
+	entry: './index.js',
 	output: {
     path: resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -13,7 +13,7 @@ module.exports = {
     ]
 	},
 	devServer: {
-	  clientLogLevel: 'error',
+	  noInfo: true,
 	  publicPath: resolve(__dirname, '/dist/')
 	}
 }
