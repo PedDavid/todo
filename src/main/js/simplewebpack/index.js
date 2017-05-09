@@ -4,6 +4,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 ReactDOM.render(
-  React.createElement('h1', null, 'Hello React World'),
+  <h1>Hello React World with JSX</h1>,
   document.getElementById('root')
 )

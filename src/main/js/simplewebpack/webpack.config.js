@@ -16,6 +16,15 @@ module.exports = {
         exclude: /(node_modules)/
       },
       {
+        test: /\.(js|jsx)?$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [ 'react' ]
+          }
+        }
+      },
+      {
         test: /\.scss$/,
         use: [ 'style-loader' ,'css-loader', 'sass-loader' ]
       }
