@@ -35,6 +35,7 @@ Add support to JSX
 TODO: Should I run standard && webpack or use a standard loader in webpack?
 Add semantic-ui-react               (yarn add --dev semantic-ui-react)
 Add semantic-ui stylesheet          (<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"/>) //TODO: Add semantic-ui themes
+                                    OR add css package and webpack file-loader(yarn add --dev semantic-ui-css file-loader) //TODO: Change configurations of file-loader
 Add Support for newer JS features
 Add React-Router
 Add Redux

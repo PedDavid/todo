@@ -11,12 +11,13 @@ module.exports = {
 		rules: [
       {
         enforce: 'pre',
-        test: /\.(js|jsx)?$/,
+        test: /\.jsx?$/,
         loader: 'standard-loader',
         exclude: /(node_modules)/
       },
       {
-        test: /\.(js|jsx)?$/,
+        test: /\.jsx?$/,
+        exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -25,8 +26,12 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
+        test: /\.s?css$/,
         use: [ 'style-loader' ,'css-loader', 'sass-loader' ]
+      },
+      {
+        test: /\.(png|ttf|eot|svg|woff2?)$/,
+        loader: 'file-loader?publicPath=dist/'
       }
     ]
 	},
