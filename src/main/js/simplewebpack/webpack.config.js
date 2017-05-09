@@ -9,11 +9,19 @@ module.exports = {
 	},
 	module: {
 		rules: [
-      { test: /\.scss$/, use: [ 'style-loader' ,'css-loader', 'sass-loader' ] }
+      {
+        enforce: 'pre',
+        test: /\.(js|jsx)?$/,
+        loader: 'standard-loader',
+        exclude: /(node_modules)/
+      },
+      {
+        test: /\.scss$/,
+        use: [ 'style-loader' ,'css-loader', 'sass-loader' ]
+      }
     ]
 	},
 	devServer: {
-	  noInfo: true,
 	  publicPath: resolve(__dirname, '/dist/')
 	}
 }

@@ -1,4 +1,4 @@
-require('./style.scss')
+import './style.scss'
 
 const heading = document.createElement('h1')
 const headingText = document.createTextNode('Hello webpack World')
