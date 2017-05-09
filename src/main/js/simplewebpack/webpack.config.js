@@ -11,5 +11,9 @@ module.exports = {
 		rules: [
       { test: /\.scss$/, use: [ 'style-loader' ,'css-loader', 'sass-loader' ] }
     ]
+	},
+	devServer: {
+	  clientLogLevel: 'error',
+	  publicPath: resolve(__dirname, '/dist/')
 	}
 }
